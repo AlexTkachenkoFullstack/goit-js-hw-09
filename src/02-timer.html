@@ -5,13 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Countdown timer</title>
+  <link rel="stylesheet" href="css/02-timer.css" />
   <link rel="stylesheet" href="css/common.css" />
 </head>
 
 <body>
   <p><a href="index.html">Go back</a></p>
   <div class="container">
-    <input type="text" id="datetime-picker" />
+    <div class="date-inpute">
+      <input type="text" id="datetime-picker" />
+      <div class="overlay"></div>
+    </div>
+
     <button type="button" data-start>Start</button>
   </div>
 

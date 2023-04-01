@@ -44,13 +44,13 @@ const options = {
       cssAnimationDuration: '800',
       cssAnimationStyle: 'fade',
   },
-);
+        );
+    refs.buttonStartEl.disabled = true;    
 return
       }
       refs.buttonStartEl.disabled = false;
     eventDate = selectedDates[0].getTime();
-    refs.buttonStartEl.classList.add('button-is-active')
-      
+    refs.buttonStartEl.classList.add('button-is-active');
   },
 };
 flatpickr(refs.inputDateTimePickerEl, options)
@@ -58,6 +58,8 @@ flatpickr(refs.inputDateTimePickerEl, options)
 
 refs.buttonStartEl.addEventListener('click', handleButtonStartElClick);
 function handleButtonStartElClick(event) {
+  refs.inputDateTimePickerEl.nextElementSibling.classList.remove('overlay');
+    refs.inputDateTimePickerEl.style.borderColor='black';
      intervalId=setInterval(showTimeLeft, 1000);
   showTimeLeft()
 }

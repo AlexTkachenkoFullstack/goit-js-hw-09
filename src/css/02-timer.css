@@ -1,0 +1,107 @@
+body{
+    background-image: linear-gradient(to right,
+                rgba(46, 47, 66, 0.2),
+                rgba(46, 47, 66, 0.2)),
+            url(../img/images.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+}
+
+.container {
+    position: absolute;
+    top:43%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#datetime-picker {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(207, 238, 238);
+}
+
+
+.date-inpute {
+    margin-right: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    top: 0;
+    left: 0;
+
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
+    height: 100%;
+
+    background-color: green;
+    opacity: 0.3;
+    pointer-events: auto;
+        pointer-events: none;  
+}
+
+.date-inpute:hover .overlay {
+    transform: translateX(0%);
+   
+}
+.date-inpute:hover #datetime-picker{
+border-color: red;
+outline: none;
+}
+
+[data-start] {
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+    background-color: rgb(243, 189, 189);
+}
+
+.button-is-active {
+    background-color: chartreuse;
+}
+
+.timer {
+    display: flex;
+    position: fixed;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%);
+    justify-content: center;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    width: 125px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    border: 2px solid rgb(8, 8, 8);
+    padding: 20px;
+    border-width: 3px;
+}
+
+.label {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
