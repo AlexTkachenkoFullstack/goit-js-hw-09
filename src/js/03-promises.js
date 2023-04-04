@@ -32,6 +32,7 @@ function handleFormElSubmit(event) {
         {
           opacity: '0.9',
           timeout: 3000,
+          backOverlay: false,
           clickToClose: 'true',
     
         });
