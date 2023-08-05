@@ -1,6 +1,6 @@
-1.color generator
-2.timer to the date
-3.
+1.Color switcher
+2.Countdown timer
+3.Promise generator
 
 # Parcel template
 
