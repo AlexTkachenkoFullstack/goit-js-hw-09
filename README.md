@@ -1,3 +1,7 @@
+1.color generator
+2.timer to the date
+3.
+
 # Parcel template
 
 Этот проект был создан при помощи Parcel. Для знакомства и настройки
